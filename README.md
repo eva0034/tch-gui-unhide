@@ -13,7 +13,7 @@ The tch-gui-unhide script can be applied to various Telstra branded Technicolor 
 
 Execute this command on the device:
 ```
-curl -skL https://raw.githubusercontent.com/seud0nym/tch-gui-unhide/master/get | sh -s --
+curl -skL https://raw.githubusercontent.com/eva0034/tch-gui-unhide/master/get | sh -s --
 ```
 
 Detailed [installation instructions](https://github.com/seud0nym/tch-gui-unhide/wiki/Installation) can be found in the [wiki](https://github.com/seud0nym/tch-gui-unhide/wiki).
