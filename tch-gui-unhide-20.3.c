@@ -1,6 +1,6 @@
 #!/bin/sh
 echo -e "[90mBLD/125:[0m Built for firmware version 20.3.c - Release 2023.03.23"
-RELEASE='2023.03.23@17:06'
+RELEASE='2023.04.01@24:52'
 # Make sure that we are running on Telstra firmware
 if [ "$(uci -q get env.var._provisioning_code)" != "Telstra" ]
 then
@@ -3915,7 +3915,7 @@ if [ $THEME_ONLY = n ]; then
   echo -e "${GREY}BLD/153:${NC} Adding version details to copyright"
   for l in $(grep -l -r 'current_year); ngx.print(' /www 2>/dev/null)
   do
-    sed -e "s|\(current_year); ngx.print('\)|\1 \[tch-gui-unhide Release 2023.03.23 for Firmware $CUSTOM_VERSION ($MKTING_NAME)\] <a href=\"https://www.paypal.me/seud0nym\" target=\"_blank\"><img src=\"/img/coffee-cup-icon.png\" alt=\"Sponsor\" title=\"Buy me a coffee\"></a>|" -i $l
+    sed -e "s|\(current_year); ngx.print('\)|\1 \[EVANS NETWORKING BUILD Release 2023.04.01 for Firmware $CUSTOM_VERSION ($MKTING_NAME)\] |" -i $l
   done
   echo -e "${GREY}BLD/158:${NC} Auto-refreshing browser cache"
   for l in $(grep -lrE "['\"][^'\"]+\.(cs|j)s['\"]" /www/cards /www/docroot /www/snippets | grep -v -E '.js$|.sh$|.json$' 2>/dev/null)
